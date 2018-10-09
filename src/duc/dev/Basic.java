@@ -1,12 +1,17 @@
 package duc.dev;
- 
-public class Basic{
+public class Basic {
 
-		  public static void main(String args[]) 
-		  { 
-		   int i=1,sum=0; 
-		   for (i=0;i<=100;i++) 
-		     sum+=i; 
-		   System.out.println ("tong cua 100 so dau tien la : "+sum); 
-		 } 
+ 
+	public static void main(String[] args) {
+
+		int kq = 0;
+	
+		
+		int i = 1;
+		while (i <= 100) {
+			kq += i;
+			i++;
 		}
+		System.out.println("tong cua 100 so dau tien la : " + kq);
+	}
+}
