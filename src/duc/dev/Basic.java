@@ -1,45 +1,49 @@
 package duc.dev;
- 
-import java.util.Scanner;
- 
+ import java.util.Scanner;
 public class Basic {
-    private static Scanner scanner = new Scanner(System.in);
-
+	 
     public static void main(String[] args) {
-        System.out.print("nhap he so bac 2, a = ");
-        float a =scanner.nextFloat();
-        System.out.print("nhap he so bac 1, b = ");
-        float b = scanner.nextFloat();
-        System.out.print("nhap he so tu do, c = ");
-        float c = scanner.nextFloat();
-        giaiPTBac2(a, b, c);
-    }
-     
-
-    public static void giaiPTBac2(float a, float b, float c) {
-        if (a == 0) {
-            if (b == 0) {
-                System.out.println("phuong trinh vo nghiem!");
-            } else {
-                System.out.println("Phuong trình có mot nghiem: "
-                        + "x = " + (-c / b));
-            }
-            return;
-        }
-        float delta = b*b - 4*a*c;
-        float x1;
-        float x2;
-        if (delta > 0) {
-            x1 = (float) ((-b + Math.sqrt(delta)) / (2*a));
-            x2 = (float) ((-b - Math.sqrt(delta)) / (2*a));
-            System.out.println("Phuong trinh có 2 nghiem la: "
-                    + "x1 = " + x1 + " và x2 = " + x2);
-        } else if (delta == 0) {
-            x1 = (-b / (2 * a));
-            System.out.println("Phuong trinh có nghiem kep: "
-                    + "x1 = x2 = " + x1);
-        } else {
-            System.out.println("Phuong trinh vo nghiem!");
+    	 Scanner scanner = new Scanner(System.in);
+        System.out.println("Nhap vao so : ");
+        int a = scanner.nextInt();
+        switch (a) {
+            case 0:
+                System.out.println("Zero");
+            break;
+            case 1:
+                System.out.println("one");
+                break;
+            case 2:
+                System.out.println("two ");
+                break;
+            case 3:
+                System.out.println("three ");
+                break;
+            case 4:
+                System.out.println("four");
+                break;
+            case 5:
+                System.out.println("five");
+                break;
+            case 6:
+                System.out.println("six");
+                break;
+            case 7:
+                System.out.println("seven");
+                break;
+            case 8:
+                System.out.println("eight");
+                break;
+            case 9:
+                System.out.println("nine");
+                break;
+            case 10:
+                System.out.println(" ten");
+                break;
+                
+            default:
+                System.out.println("B?n dã gán sai giá tr?, ch? du?c gán s? nguyên t? 0 t?i 10");
+                break;
         }
     }
 }
